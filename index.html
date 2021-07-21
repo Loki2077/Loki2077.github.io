@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="5; url=.//webs/hy.html">
+		<title>呦吼吼</title>
+		<link rel="stylesheet" type="text/css" href="css/spiders.css"/>
+		<style type="text/css">
+			* {
+				padding: 0;margin: 0;
+			}
+			
+			html,body{
+				width: 100%;height: 100%;
+			}
+			
+			#bottomLayer,#imageLayer,#exhibitionLayer,#exhibitionLayer_two{
+				width: 100%;
+				height: 100%;
+			}
+			
+			#bottomLayer {
+				position: relative;
+				z-index: 1;
+			}
+			
+			#imageLayer {
+				position: absolute;
+				z-index: 10;
+			}
+			
+			#imageLayer>#imageLayerImg{
+				width: 100% ;
+				height: 100%;
+				display: block;
+				position: absolute;
+				z-index: 11;
+			}
+			
+			#exhibitionLayer {
+				position: absolute;
+				z-index: 100;
+			}
+			
+			#exhibitionLayer_two {
+				position: absolute;
+				z-index: 101;
+			}			
+		</style>
+	</head>
+	<body onselectstart="return false">
+		<div id="bottomLayer">
+			<div id="imageLayer">
+				<img src="" id="imageLayerImg" alt="" />
+				<div id="exhibitionLayer">
+					<canvas id="spiders"></canvas>
+					<div id="main-body">			
+						<div id="canvas">
+							<div id='spidersOne'></div>
+							<div id='spidersTwo'></div>
+							<div id='spidersThree'></div>				
+						</div>	
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	<script src="upupooConfig.json" type="text/javascript" charset="utf-8"></script>
+	<script src="js/clock.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var upupoo_imageLayerImg = document.getElementById('imageLayerImg');
+			upupoo_imageLayerImg.src = upupooConfig.bgImg;
+	</script>
+	</body>
+</html>
