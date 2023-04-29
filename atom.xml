@@ -6,7 +6,7 @@
   <link href="https://www.arol.top/atom.xml" rel="self"/>
   
   <link href="https://www.arol.top/"/>
-  <updated>2023-04-19T18:20:39.057Z</updated>
+  <updated>2023-04-29T13:47:23.271Z</updated>
   <id>https://www.arol.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.arol.top/posts/660e2341.html"/>
     <id>https://www.arol.top/posts/660e2341.html</id>
     <published>2023-04-19T17:36:32.000Z</published>
-    <updated>2023-04-19T18:20:39.057Z</updated>
+    <updated>2023-04-29T13:47:23.271Z</updated>
     
     <content type="html"><![CDATA[<div class="note flat"><p>开源地址：<a href="https://github.com/qier222/YesPlayMusic">https://github.com/qier222/YesPlayMusic</a></p></div><br /><p align="center">  <a href="https://music.qier222.com" target="blank">    <img src="https://s2.loli.net/2023/04/20/IoHRUiESepnv47W.png" alt="Logo" width="156" height="156">  </a>  <h2 align="center" style="font-weight: 600">YesPlayMusic</h2>  <p align="center">    高颜值的第三方网易云播放器，支持 Windows / macOS / Linux :electron:    <br />    <a href="https://music.qier222.com" target="blank">        <strong>🌎 访问DEMO</strong>    </a>&nbsp;&nbsp;|&nbsp;&nbsp;    <a href="https://pan.baidu.com/s/1LqvS543b-7jNXRLpAR7JIQ?pwd=ux5o" target="blank">        <strong>📦️ 下载安装包(百度云)</strong>    </a>&nbsp;&nbsp;|&nbsp;&nbsp;    <a href="https://github.com/qier222/YesPlayMusic/releases" target="blank">        <strong>📦️ 下载其他版本(github)</strong>    </a>    <br />    <br />  </p></p><p><img src="https://s2.loli.net/2023/04/20/8nFfirTyv3L2SjI.png" alt="Library"><br><img src="https://s2.loli.net/2023/04/20/1zv6loVWt8grAxO.png" alt="Library"></p><h2 id="全新版本">全新版本</h2><p>全新2.0 Alpha测试版已发布，欢迎前往 <a href="https://github.com/qier222/YesPlayMusic/releases">Releases</a> 页面下载。<br>当前版本将会进入维护模式，除重大bug修复外，不会再更新新功能。<br><br><img src="https://s2.loli.net/2023/04/20/NGYdsvjQmK6BcVi.png" alt="222956475-4126a81a-ecb5-4f3f-95d9-879dabf460d5.png"></p><h2 id="✨-特性">✨ 特性</h2><ul><li>✅ 使用 Vue.js 全家桶开发</li><li>🔴 网易云账号登录（扫码/手机/邮箱登录）</li><li>📺 支持 MV 播放</li><li>📃 支持歌词显示</li><li>📻 支持私人 FM / 每日推荐歌曲</li><li>🚫🤝 无任何社交功能</li><li>🌎️ 海外用户可直接播放（需要登录网易云账号）</li><li>🔐 支持 <a href="https://github.com/UnblockNeteaseMusic/server#%E9%9F%B3%E6%BA%90%E6%B8%85%E5%8D%95">UnblockNeteaseMusic</a>，自动使用<a href="https://github.com/UnblockNeteaseMusic/server#%E9%9F%B3%E6%BA%90%E6%B8%85%E5%8D%95">各类音源</a>替换变灰歌曲链接 （网页版不支持）<ul><li>「各类音源」指默认启用的音源。</li><li>YouTube 音源需自行安装 <code>yt-dlp</code>。</li></ul></li><li>✔️ 每日自动签到（手机端和电脑端同时签到）</li><li>🌚 Light/Dark Mode 自动切换</li><li>👆 支持 Touch Bar</li><li>🖥️ 支持 PWA，可在 Chrome/Edge 里点击地址栏右边的 ➕ 安装到电脑</li><li>🟥 支持 <a href="http://Last.fm">Last.fm</a> Scrobble</li><li>☁️ 支持音乐云盘</li><li>⌨️ 自定义快捷键和全局快捷键</li><li>🎧 支持 Mpris</li><li>🛠 更多特性开发中</li></ul>]]></content>
     

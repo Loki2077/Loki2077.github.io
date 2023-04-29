@@ -1281,8 +1281,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    var subTitle = title.endsWith("| Arol の小窝 ") ? title.substring(0, title.length - 14) : title;
+    navigator.clipboard.writeText('Arol の小窝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
       data: function () {
         this.$notify({
@@ -3173,11 +3173,12 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   //--darkmode-bg 更换这个url 可换默认壁纸
+  // /assets/bg/真寻.png
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(/assets/bg/真寻.png);
-    --darkmode-bg: url(/assets/bg/真寻.png);
-    --mobileday-bg: url(/assets/bg/真寻.png);
-    --mobilenight-bg: url(/assets/bg/真寻.png);
+    --default-bg: url(https://cdn.seovx.com/?mom=302);
+    --darkmode-bg: url(https://cdn.seovx.com/?mom=302);
+    --mobileday-bg: url(https://cdn.seovx.com/?mom=302);
+    --mobilenight-bg: url(https://cdn.seovx.com/?mom=302);
   }`;
 }
 // 切换背景主函数
