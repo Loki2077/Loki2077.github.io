@@ -6769,7 +6769,7 @@ div#archive {
 /* 白天模式头图与页脚遮罩 */
 [data-theme="light"] #page-header:before,
 [data-theme="light"] #footer::before {
-  background-color: rgba(0, 0, 0, 0.18) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
   z-index: -3;
 }
 
