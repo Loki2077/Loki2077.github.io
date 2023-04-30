@@ -3174,11 +3174,13 @@ if (localStorage.getItem("blogbg") != undefined) {
 } else {
   //--darkmode-bg 更换这个url 可换默认壁纸
   // /assets/bg/真寻.png
+  // https://cdn.seovx.com/?mom=302
+  
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://cdn.seovx.com/?mom=302);
-    --darkmode-bg: url(https://cdn.seovx.com/?mom=302);
-    --mobileday-bg: url(https://cdn.seovx.com/?mom=302);
-    --mobilenight-bg: url(https://cdn.seovx.com/?mom=302);
+    --default-bg: url(https://imgapi.xl0408.top/index.php);
+    --darkmode-bg: url(https://imgapi.xl0408.top/index.php);
+    --mobileday-bg: url(https://imgapi.xl0408.top/index.php);
+    --mobilenight-bg: url(https://imgapi.xl0408.top/index.php);
   }`;
 }
 // 切换背景主函数
