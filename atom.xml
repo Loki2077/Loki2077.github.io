@@ -6,7 +6,7 @@
   <link href="https://www.arol.top/atom.xml" rel="self"/>
   
   <link href="https://www.arol.top/"/>
-  <updated>2024-03-13T02:39:12.347Z</updated>
+  <updated>2024-03-19T09:32:27.070Z</updated>
   <id>https://www.arol.top/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows图标混乱</title>
+    <link href="https://www.arol.top/posts/4115624e.html"/>
+    <id>https://www.arol.top/posts/4115624e.html</id>
+    <published>2024-03-19T08:52:31.000Z</published>
+    <updated>2024-03-19T09:32:27.070Z</updated>
+    
+    <content type="html"><![CDATA[<p>win10系统电脑每次开机或者重启之后，发现桌面上的图标都乱排，这可能就是图标间隔导致或者更新显卡驱动导致的某个注册表失效等问题，所以不影响使用，但是对于强迫症用户来说，有点难受，即使您在桌面尝试整理完图标后，只要每次注销或者重启再次进入到桌面就会乱了。那么桌面图标重启后变乱怎么办？下面本知乎透明分享一下Win10电脑开机桌面图标打乱的解决方法，如果您也出现这个问题，不妨试试看。</p><p>电脑开机桌面图标打乱的解决方法</p><p>由于每个人导致这个问题的原因不同，所以最终解决方法也不同的，需要对症下药才可以解决，所以本文带来很多解决方法，大家可以逐一测试。</p><h2 id="方法一、图标自动排列导致">方法一、图标自动排列导致</h2><p>在桌面空白处鼠标右键选择“查看”，去除&quot;自动排列图标（A）“的勾选，勾选&quot;将图标与网格对齐(I)”，重启一下电脑看看是不是图标不会自动排列了。</p><p><img src="https://img2.imgtp.com/2024/03/19/ZMUiHMxu.png" alt="image-20240319165727329"></p><h2 id="方法二、Win10某BUG导致">方法二、Win10某BUG导致</h2><p>可能是Win10的BUG导致的，您可以尝试这个方法，先将桌面图标按您的要求排列好之后，鼠标右键查看选择“中等图标”，然后重启电脑，这样就不会乱了，你可以按需要再变成小图标。</p><h2 id="方法三、奇葩的解决方法">方法三、奇葩的解决方法</h2><h3 id="1-在除桌面外的地方创建一个文件夹。">1.在除桌面外的地方创建一个文件夹。</h3><p><img src="https://img2.imgtp.com/2024/03/19/t99wLARB.png" alt="image-20240319170150233"></p><h3 id="2-鼠标右键桌面空白处-个性化-主题-桌面图标设置">2.鼠标右键桌面空白处 &gt; 个性化 &gt; 主题 &gt; 桌面图标设置</h3><p>将“<strong>计算机</strong>、<strong>回收站</strong>、<strong>用户的文件</strong>、<strong>控制面板</strong>、<strong>网络</strong>”前面复选框去掉全部勾选，并且应用保存设置</p><p><img src="https://img2.imgtp.com/2024/03/19/OsNDSLwi.png" alt="image-20240319170957820"></p><p><img src="https://img2.imgtp.com/2024/03/19/sWKglLOp.png" alt="image-20240319171053749"></p><h3 id="3-把桌面上所有快捷方式（图标），复制到最开始创建的那个文件夹里。">3.把桌面上所有快捷方式（图标），复制到最开始创建的那个文件夹里。</h3><h3 id="4-重启电脑">4.重启电脑</h3><h3 id="5-再去个性化-主题-找到桌面图标设置把想选的图标全部勾选上，并且将最开始创建的文件夹里的图标复制到桌面就好了。（完成后可以删除最开始创建的文件夹）">5.再去个性化 &gt; 主题 &gt; 找到桌面图标设置把想选的图标全部勾选上，并且将最开始创建的文件夹里的图标复制到桌面就好了。（完成后可以删除最开始创建的文件夹）</h3><h2 id="方法四、图标间隔问题导致">方法四、图标间隔问题导致</h2><p>去注册表编辑器设置图标的间隔就可以解决。</p><h3 id="1-打开注册表">1.打开注册表</h3><p>以Win10系统为例，我们在键盘上按下**“Win+R”**组合键调出运行，或者在开始菜单找到“运行”，在运行中输入“<strong>regedit</strong>”打开注册表编辑器。</p><p><img src="https://img2.imgtp.com/2024/03/19/C24MU1OF.png" alt="image-20240319171457133"></p><h3 id="2-打开指定目录">2.打开指定目录</h3><p>我们在注册表编辑器中依次展开至“ <strong>HKEY_CURRENT_USER &gt; Control Panel &gt; Desktop &gt; WindowMetrics</strong> ”</p><p><img src="https://img2.imgtp.com/2024/03/19/JOPxiHNT.png" alt="image-20240319171702725"></p><h3 id="3-更改IconSpacing数值">3.更改IconSpacing数值</h3><p>在注册表右侧窗口中，找到并双击打开IconSpacing的项（桌面图标水平间距），负数越大间隔就大，将数值数据修改为-1200。（默认值是-1125，如果改到-1200出现问题可以在改回来。）</p><p><img src="img/image-20240319171917985.png" alt="image-20240319171917985"></p><h3 id="4-更改IconVerticalSpacing数值">4.更改IconVerticalSpacing数值</h3><p>再找到并双击打开IconVerticalSpacing的项（桌面图标垂直间距），负数越大间隔就大，将数值数据修改为-1200。（默认值是-1125，如果改到-1200出现问题可以在改回来。）</p><p><img src="https://img2.imgtp.com/2024/03/19/VYcJzGvy.png" alt="image-20240319172041092"></p><h3 id="5-重启电脑">5.重启电脑</h3><p>将电脑重启之后就可以看看是不是可以了，手动排列图标之后，就不会变乱了。</p><h2 id="方法五、更新显卡驱动程序导致">方法五、更新显卡驱动程序导致</h2><p>在安装显卡驱动程序的时候，或者Windows Update在后台自动升级显卡驱动，更改了屏幕分辨率，就会导致某个注册表失效的情况，重新制作个管理桌面图标排列的注册表项就OK啦。</p><h3 id="1-打开注册表-2">1.打开注册表</h3><p>以Win10系统为例，我们在键盘上按下**“Win+R”**组合键调出运行，或者在开始菜单找到“运行”，在运行中输入“<strong>regedit</strong>”打开注册表编辑器。</p><p><img src="https://img2.imgtp.com/2024/03/19/C24MU1OF.png" alt="image-20240319171457133"></p><h3 id="2-打开指定目录-2">2.打开指定目录</h3><p>查看系统是64位还是32位。（一般都是64）</p><p><img src="https://img2.imgtp.com/2024/03/19/YnPsopXq.png" alt="image-20240319172454186"></p><h4 id="1-如果您是64位操作系统请在注册表编辑器依次展开至如下路径：">1.如果您是64位操作系统请在注册表编辑器依次展开至如下路径：</h4><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“HKEY_CLASSES_ROOT\Wow6432Node\CLSID\&#123;42aedc87<span class="string">-2188</span><span class="string">-41</span>fd-b9a3<span class="string">-0</span>c966feabec1&#125;\InProcServer32”；</span><br></pre></td></tr></table></figure><p>复制这个路径到这个地方</p><p><img src="https://img2.imgtp.com/2024/03/19/Vgd890dx.png" alt="image-20240319172324697"></p><h4 id="2-如果您是32位操作系统请在注册表编辑器依次展开至如下路径：">2.如果您是32位操作系统请在注册表编辑器依次展开至如下路径：</h4><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“HKEY_CLASSES_ROOT\CLSID&#123;42aedc87<span class="string">-2188</span><span class="string">-41</span>fd-b9a3<span class="string">-0</span>c966feabec1&#125;\InProcServer32”；</span><br></pre></td></tr></table></figure><h4 id="3-更改数值">3.更改数值</h4><p>找到右侧窗口的默认项，双击打开默认项，将数值数据修改成如下，并点击确定保存数值。</p><figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">%SystemRoot</span><span class="built_in">%system</span>32windows.storage.dll</span><br></pre></td></tr></table></figure><p>如果原来就是这个数值，那就不要修改了，不是这个问题导致的。</p><p><img src="https://img2.imgtp.com/2024/03/19/b9YL3Nu7.png" alt="image-20240319172822262"></p><h4 id="4-当然也你也尝试重新安装显卡驱动，看看是否可以解决该问题。">4.当然也你也尝试重新安装显卡驱动，看看是否可以解决该问题。</h4><h3 id="3-如果觉得注册表麻烦的话，Win10-还有另外一种解决办法。">3.如果觉得注册表麻烦的话，Win10 还有另外一种解决办法。</h3><p><img src="https://img2.imgtp.com/2024/03/19/WA1mcrla.png" alt="image-20240319173117562"></p><p>重启后再更改回来，也能消除这个情况，但Windows 7/8/8.1 的用户就只能操作注册表了。</p>]]></content>
+    
+    
+    <summary type="html">文章描述</summary>
+    
+    
+    
+    <category term="电脑" scheme="https://www.arol.top/y_categories/%E7%94%B5%E8%84%91/"/>
+    
+    
+    <category term="系统" scheme="https://www.arol.top/y_tags/%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="Windows" scheme="https://www.arol.top/y_tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>澎湃OS root</title>
+    <link href="https://www.arol.top/posts/74e70d36.html"/>
+    <id>https://www.arol.top/posts/74e70d36.html</id>
+    <published>2024-03-14T04:34:01.000Z</published>
+    <updated>2024-03-19T09:32:27.073Z</updated>
+    
+    <content type="html"><![CDATA[<p>不折腾，麻烦。</p>]]></content>
+    
+    
+    <summary type="html">文章描述</summary>
+    
+    
+    
+    <category term="教程" scheme="https://www.arol.top/y_categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="小米" scheme="https://www.arol.top/y_tags/%E5%B0%8F%E7%B1%B3/"/>
+    
+    <category term="澎湃" scheme="https://www.arol.top/y_tags/%E6%BE%8E%E6%B9%83/"/>
+    
+    <category term="root" scheme="https://www.arol.top/y_tags/root/"/>
+    
+  </entry>
   
   <entry>
     <title>小米路由器-工具箱</title>
@@ -119,7 +167,7 @@
     <link href="https://www.arol.top/posts/6ac354bf.html"/>
     <id>https://www.arol.top/posts/6ac354bf.html</id>
     <published>2023-10-30T06:34:15.000Z</published>
-    <updated>2023-10-30T07:45:15.394Z</updated>
+    <updated>2024-03-13T02:45:32.519Z</updated>
     
     <content type="html"><![CDATA[<p>在 VScode 或者 PowerShell 中 运行hexo或者其他命令出现以下问题：</p><blockquote><p>无法加载文件 C:\Users\DH\Desktop\cs\rename.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参<br>阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。</p><ul><li>CategoryInfo : SecurityError: (:) []，ParentContainsErrorRecordException</li><li>FullyQualifiedErrorId : UnauthorizedAccess</li></ul></blockquote><blockquote><p>Restricted 执行策略不允许任何脚本运行。  <br>AllSigned 和 RemoteSigned 执行策略可防止 Windows PowerShell 运行没有数字签名的脚本。<br> 本主题说明如何运行所选未签名脚本（即使在执行策略为 RemoteSigned 的情况下），还说明如何对  脚本 行签名以便您自己使用。<br>有关 Windows PowerShell 执行策略的详细信息，请参阅 about_Execution_Policy。</p></blockquote><p>解决办法</p><blockquote><p>以管理员身份打开 VScode终端 或者 PowerShell  输入</p><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="built_in">set-executionpolicy</span> <span class="string">remotesigned</span></span><br></pre></td></tr></table></figure></blockquote>]]></content>
     
